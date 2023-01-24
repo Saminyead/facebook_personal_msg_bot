@@ -104,7 +104,7 @@ def send_invitation(name, message):
 invited_list = []
 
 # getting list of names and the message content
-name_list_file = os.getenv('name_list')
+name_list_file = os.getenv('list_of_names')
 message_file = os.getenv('msg_file')
 
 message_from_file = write_msg_from_txt_file(message_file)
@@ -122,6 +122,3 @@ for name_in_list in names_list:
 with open(file='invited_list.txt',mode='a',encoding='utf8') as list_writer:
     list_writer.write('\n'.join(invited_list))
     logging.info('List of invited people written to file')
-# for name_name in name_name_list:
-#     name_message = f'Herro {name_name}' + write_msg_from_txt_file(name_message_file)
-#     send_invitation(name=name_name,message=name_message)
