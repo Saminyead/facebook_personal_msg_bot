@@ -7,9 +7,9 @@ was created for just a single text!
 Alternatively, you can individually click on each people's message box, and Ctrl+C Ctrl+V the same message over and over. This is fine if you have to send to, say
 around 10 people. But what if it is multiples of 10, many multiples in fact. This is where this bot comes in.
 
-Before you can use the bot as intended there are some preparatory steps:
+Before you can use the bot as intended, there are some preparatory steps:
 
-1. Install all packages in the "requirements.txt" file. Run the following commands in order in command prompt - cd /d <path-where-repo-is> and 
+1. Install all packages in the "requirements.txt" file. Run the following commands in order in command prompt -- cd /d path-where-repo-is and 
 pip install -r requirements.txt.
 
 2. In the repo folder, create a file named ".env", then open it up with a text editor like notepad. In the .env file write your facebook login email and password in two
@@ -19,9 +19,9 @@ password=yourpassword
 (replace youremail@example.com and yourpassword with your Facebook login email and password respectively)
 
 Now that the preparatory steps are done, let's set up the bot:
-1. in the msg_content.txt file you write a message 
-2. in the list_of_names.txt file you write a list of names of friend you want to send the message to - each name in a new line
-3. you run the script send_fb_msg.py;
+1. in the msg_content.txt file, write a message 
+2. in the list_of_names.txt file, write a list of names of friend you want to send the message to -- each name in a new line
+3. run the script send_fb_msg.py;
 
 and now all your friends have received the same message, and there are no awkward groups!
 
@@ -41,8 +41,7 @@ running the program for a long time - especially day after day, or running it wi
 3. Doesn't Meta have an API for this?
 
 Yes, they do in fact. It's called the Send API, documentations for which can be found <a href="https://developers.facebook.com/docs/messenger-platform/reference/send-api/">here</a>.
-But it only works for if you want to send a message through a Facebook Page you own. So, this API is mostly useful for business purpose e.g. sending the same messages
-to your customers. But there is no API which allows you to send messages from your personal account to your friends. Hence, the bot.
+But it only works if you want to send a message through a Facebook Page you own. As a result, this API is mostly useful for business purposes e.g. sending the same messages to your customers. But there is no API which allows you to send messages from your personal account to your friends. Hence, the bot.
 
-So yes, the bot is not extremely useful for business purposes - use the Send API for that. But if like me, you want to send the same message to lots of friends without 
-having to open a group that will be mostly dead - you can use this.
+So yes, the bot is not extremely useful for business purposes -- use the Send API for that. But if like me, you want to send the same message to lots of friends without 
+having to open a group that will be mostly dead -- you can use this.
