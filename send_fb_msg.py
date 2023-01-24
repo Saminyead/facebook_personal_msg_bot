@@ -57,6 +57,7 @@ my_pass = os.getenv('password')
 
 # log in to to Facebook
 fb_login(login_email=my_email,login_pass=my_pass)
+time.sleep(5)
 
 # clicking on messenger icon
 messenger_icon_xpath = '/html/body/div[1]/div[1]/div[1]/div/div[2]/div[4]/div[1]/div[2]'
